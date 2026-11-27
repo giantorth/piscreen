@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Native Linux/Windows smoke test for the OpenH264 binding and BGRA->I420 conversion.
+       Uses the same source files as the driver. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../PiScreen.Driver/Video/OpenH264Encoder.cs" Link="Video/OpenH264Encoder.cs" />
+    <Compile Include="../../PiScreen.Driver/Video/ColorConvert.cs" Link="Video/ColorConvert.cs" />
+  </ItemGroup>
+</Project>

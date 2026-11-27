@@ -1,0 +1,17 @@
+[Unit]
+Description=PiScreen - SimHub dashboard receiver (WebRTC H.264 to the local display)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+# Root: needs the display (DRM master / fbdev), the V4L2 H.264 decoder, touch input and the
+# backlight. Fine for a dedicated appliance; listens on the LAN only (no auth, see README).
+User=root
+ExecStart=/usr/bin/python3 /opt/piscreen/piscreen_receiver.py --config /etc/piscreen.conf
+Restart=always
+RestartSec=2
+Nice=-5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

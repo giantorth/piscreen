@@ -1,0 +1,10 @@
+bin/
+obj/
+*.user
+.vs/
+/dist/
+/windows/third_party/
+__pycache__/
+*.pyc
+*.h264
+MMFVisualizerV4.zip
