@@ -17,8 +17,7 @@ SimHub ──(shared-memory screen)──► DisplayDriver.exe ──(WebRTC H.2
 
 The Pi reports its display size, and SimHub renders at exactly that size, so the Pi never scales.
 
-> **Status: prototype.** It's been tested end to end against SimHub 9.13.7 under Wine. Real Pi
-> hardware is **not tested yet**: the Pi half has only run on a Linux desktop with software decoding.
+> **Status: prototype.**
 
 Downloads: [latest release](https://github.com/giantorth/piscreen/releases/latest) — `PiScreen-driver.zip` (Windows) and
 `piscreen-pi.tar.gz` (Raspberry Pi).
